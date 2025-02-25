@@ -7,6 +7,80 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+/* My Projects CSS */
+.projects .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Individual Project Box */
+.projects .boxes .box {
+  width: calc(100% / 3 - 20px); /* 3 boxes per row with spacing */
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+  background: #fff;
+}
+
+/* Hover Effect */
+.projects .boxes .box:hover {
+  background: #6e93f7; /* Light Orange Theme */
+  color: #fff;
+}
+
+/* Image Styling */
+.projects .boxes .box img {
+  width: 100%;
+  max-width: 250px; /* Limit max width */
+  height: 150px; /* Keep images smaller */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Hover Effects on Text */
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover p {
+  color: #0E2431;
+  transition: all 0.4s ease;
+}
+
+/* Icon Styling */
+.projects .boxes .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #6e93f7;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.projects .boxes .box:hover .icon {
+  background-color: #fff;
+  color: #6e93f7;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects .boxes .box {
+    width: calc(100% / 2 - 20px); /* 2 boxes per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects .boxes .box {
+    width: 100%; /* 1 box per row */
+  }
+}
 
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {

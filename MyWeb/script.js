@@ -14,6 +14,7 @@ window.onscroll = function() {
 
 }
 
+
 // Side NavIgation Menu JS Code
 let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
@@ -33,6 +34,8 @@ cancelBtn.onclick = function(){
   body.style.overflow = "auto";
   scrollBtn.style.pointerEvents = "auto";
 }
+
+
 
 // Side Navigation Bar Close While We Click On Navigation Links
 let navLinks = document.querySelectorAll(".menu li a");
